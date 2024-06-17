@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
-
 import localFont from "next/font/local";
 
-const ClashGrotesk = localFont({
-  src: "./ClashGrotesk-SemiBold.woff2",
+const clashGrotesl = localFont({
+  src: "./clash-grotesk-semibold.woff2",
   display: "swap",
 });
 
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ClashGrotesk.className}>
+      <body className={clashGrotesl.className}>
         <div className="min-h-screen text-white bg-[url('/background.png')] bg-cover bg-center flex flex-col items-center pt-20 lg:pt-40">
           <div className="flex items-center text-5xl font-bold gap-8">
             <span className="hidden lg:block">Kinsmen</span>

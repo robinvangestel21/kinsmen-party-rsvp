@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         {errors.amount && (
           <span className="text-red-500 text-lg font-normal">
-            Please let us know if you're bringing someone
+            {` Please let us know if you're bringing someone`}
           </span>
         )}
         <button
