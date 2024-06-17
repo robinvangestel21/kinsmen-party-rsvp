@@ -84,6 +84,19 @@ export default function Home() {
             >
               +1
             </label>
+            <input
+              id="2"
+              {...register("amount", { required: true })}
+              type="radio"
+              value="2"
+              className="peer/2 hidden"
+            />
+            <label
+              htmlFor="2"
+              className="bg-transparent peer-checked/2:bg-blue-400 transition-colors text-white border-white border rounded-lg p-4 w-16 cursor-pointer"
+            >
+              +2
+            </label>
           </div>
         </div>
         {errors.amount && (
