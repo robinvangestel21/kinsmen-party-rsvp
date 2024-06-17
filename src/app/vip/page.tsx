@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <main className="pt-10 pb-20 container px-4 space-y-8 max-w-[450px] text-center flex flex-col items-center text-2xl font-bold">
       <h1 className="whitespace-pre-line">
-        {`Enter your name to \n let us know if you'll be joining us:`}
+        {`Enter your full name to \n let us know if you'll be joining us:`}
       </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
