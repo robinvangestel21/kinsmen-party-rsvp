@@ -4,7 +4,7 @@ import { createClient } from "contentful-management";
 
 const postRSVP = async (data: any) => {
   const client = createClient({
-    accessToken: "CFPAT-h_vuMCA-qMAIwZWok70KroIRtHtm-eUyuWy1PsN7idk",
+    accessToken: process.env.CONTENTFUL_MANAGEMENT_API_TOKEN || "",
   });
 
   return client
